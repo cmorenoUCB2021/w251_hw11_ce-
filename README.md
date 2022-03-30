@@ -84,6 +84,13 @@ As it can be seen in the formula, the new Q-value of the state-action pair is ba
 
 As we initialize the Q-table with zeros, at the beginning, there is no a best action for the model to take. Thus the model chooses randomly (exploration based on epsilon value). This becomes a challenge once one positive Q-value is found. That leads to the Q-function always returning that specific action (as it was positive). The model may be stuck with this, and it would not explore other avenues, and the model may not be able to explore other avenues to identify an even higher Q-value. In this situation is when the epsilon parameter helps the model. Epsilon helps to decide whether the model is using the Q-function to determine the next action or take a random sample of the action space. Thus the model is not stopping to explore after it finds a positive Q-value (greater zero). Instead the model starts off exploring the action space (randomly) and after every game played it decreases epsilon until reaching minimum (for epsilon). As the model starts with a focus on exploration, it can start learning, and the it can start to focus on exploitation.  This is called the exploration-exploitation trade-off, which is necessary to control the agent’s greed.
 
+## Link to Videos on S3 bucket
+
+>- Video 1: `https://w251facesbucket.s3.amazonaws.com/testing_run0.mp4`
+
+>- Video 2: `https://w251facesbucket.s3.amazonaws.com/testing_run50.mp4`
+
+
 ## Apendix: Log for Model Testing
 
 Test Performance:
